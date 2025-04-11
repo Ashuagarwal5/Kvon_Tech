@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background-Color Change</title>
+</head>
+<body>
+
+  <h2>Click the button to change background color</h2>
+  <button id="btn">Change Color</button>
+  <p id="colorText">Current Color: #ffffff</p>
+
+  <script>
+    var button = document.getElementById("btn");
+    var colorText = document.getElementById("colorText");
+
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Change color on button click
+    button.onclick = function() {
+      var ColorCode = getRandomColor();
+      document.body.style.backgroundColor = ColorCode;
+      colorText.innerText = "Current Color: " + ColorCode;
+    };
+  </script>
+
+</body>
+</html>
