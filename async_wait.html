@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async/Await : </h1>
+    <script>
+        let num=1;
+        async function findMax(){
+            if(num>10){
+                return "num is greather then 10 <br>";
+            } else {
+                return "num is lower then 10 <br>";
+            }
+        }
+        findMax().then((text)=>{
+            document.write(text);
+        })
+        findMax().catch((err)=>{
+            document.write(err);
+        })
+
+        //async with Await keyword
+        document.write("<h2>Async with Await keyword : </h2>");
+        async function promise(){
+            let promise1 =new Promise((resolve,reject)=>{
+                resolve(" promise is solved ");
+            })
+            let result= await promise1;
+            document.write(result);
+        }
+        promise();
+
+
+
+    </script>
+</body>
+</html>
