@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            background-color: antiquewhite;
+            text-align: center;
+            font-size: larger;
+        }
+        .nav{
+            display: inline-block;
+            width: 100%;
+            background-color: black;
+            
+        }
+        li{
+            list-style-type: none;
+            float: left;
+            display: block;
+            font-size: x-large;
+            padding: 15px;
+            color: aliceblue;
+            /* line-height: 25px; */
+            text-align: center;
+        }
+        li:hover{
+            background-color: rgb(74, 114, 114);
+            cursor:pointer;
+        }
+        .list-content{
+            display: block;
+            position: absolute;
+            top: 145px;
+            left: 77.8px;
+            color: red;
+            background-color: yellowgreen;
+        }
+        .container{
+            display: inline-block;
+            width: 100%;
+            background-color: red;
+        }
+        .content-25{
+            width: 25%;
+            float: left;
+            background-color:beige;
+            /* padding-left: 5px; */
+            text-align: center;
+        }
+        .content-50{
+            width: 50%;
+            float: left;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti modi vero tempora commodi tempore ipsam, inventore placeat culpa eaque aliquam, distinctio illo architecto quos pariatur error et voluptas dolorum. Hic.</p>
+    </div>
+    <div class="nav">
+        <li>list 1</li>
+        <li class="list">list 2
+            <ol class="list-content">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+        </li>
+        <li>list 3</li>
+    </div>
+    <div class="container">
+        <div class="content-25"> 
+            <h1>Side Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum aliquid odit id, similique delectus soluta laborum laudantium deserunt totam. Nemo accusamus voluptas expedita hic, possimus velit eaque fuga nam.</p>
+        </div>
+        <div class="content-50">
+            <h1>Main Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi assumenda similique a repudiandae, consequatur laborum voluptate, sequi quae quo suscipit qui id dignissimos soluta earum, beatae reprehenderit magni deleniti eligendi.</p>
+        </div>
+        <div class="content-25">
+            <h1>Side Content</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dicta iste atque! Eos molestiae atque minima, reprehenderit dolor fugiat doloribus alias mollitia, expedita sunt consequuntur ex quibusdam dolorum labore dicta?</p>
+        </div>
+    </div>
+</body>
+</html>

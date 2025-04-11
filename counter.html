@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: list;
+        }
+        h1{
+            counter-reset: sublist;
+        }
+        h1::before{
+            counter-increment: list;
+            content: counter(list) ". ";
+        }
+        h2::before{
+            counter-increment: sublist;
+            content:counter(list)"." counter(sublist) " ";
+        }
+        h3::before{
+            counter-increment: sublist;
+            content:counter(list)"." counter(sublist) " ";
+        }
+        ol{
+            counter-reset: a ; /* a 5  a=variable 5=start with 5 by default it is 0 */
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        li::before{
+            counter-increment: a;
+            content: counters(a,".") " ";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>try counter</h1>
+    <h2>item1</h2>
+    <h2>item2</h2>
+    <h2>item3</h2>
+    <h2>item4</h2>
+    <h1></h1>
+    <h1></h1>
+    <h3>a</h3>
+    <h3>b</h3>
+    <h3>c</h3>
+    <h3>d</h3>
+    <ol>
+        <li>item 1</li>
+        <li> item 2
+            <ol>
+                <li>a</li>
+                <li>b
+                    <ol>
+                        <li>aa</li>
+                        <li>bb</li>
+                        <li>cc</li>
+                    </ol>
+                </li>
+                <li>c</li>
+            </ol>
+        </li>
+        <li>ff</li>
+        <li>gg</li>
+    </ol>
+</body>
+</html>

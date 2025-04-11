@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS for vertical navbar */
+
+        /* ul{
+            list-style-type: none;
+            width: 250px;
+            height: 100vh;
+            background-color: #aad6ec;
+            display: block;
+            float: left;
+            
+           
+        }
+        li{
+            line-height: 50px;
+            text-align: center;
+            
+        }
+        li:hover{
+            background-color: #81b1ce;
+            font-size: 25px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            display: flex;
+            padding-left: 25px;
+        } */
+
+        /* CSS for Horizontal navbar */
+ 
+        ul{
+            width: 100%;
+            height: 50px;
+            list-style-type: none;
+            background-color: rgba(127, 255, 212,1);
+            position: fixed; /*sticky; top 0px*/
+            top: 0;
+            /* overflow: hidden;  */
+        }
+        li{
+            width: 100px;
+            height: 100%;
+            float: left;
+            position: relative;
+            
+            text-align: center;
+            line-height: 50px;
+        }
+        li a{
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        li:hover{
+            background-color: antiquewhite;
+            
+        }
+        
+        .dropdown-content {
+            display: none;
+            background-color: rgba(127, 255, 212,1) ;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 10000;
+        }
+        .dropdown-content a:hover{
+            background-color: antiquewhite;
+        }
+       .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        p{
+            margin-left: 10px;
+            padding-top: 50px;
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- vertical navbar -->
+
+    <!-- <ul>
+        <li><a href="#" >Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptates voluptas magni accusantium maiores itaque quam fuga possimus! Rem aliquam, eos  eveniet similique eum dolores, quas vel numquam hic? Perspiciatis optio quam dolor perferendis, culpa aperiam?</p> -->
+
+    <!-- horizontal navbar -->
+            <!-- for position sticky -->
+            <!-- <p style="display: inline;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p> -->
+    <ul>
+        <li><a href="#" >Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">News</a>
+            <ul class="dropdown-content">
+                <li><a href="#">list1</a></li>
+                <li><a href="#">list2</a></li>
+                <li><a href="#">list3</a></li>
+                <li><a href="#">list4</a></li>
+            </ul>
+            
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore accusamus magnam corporis sapiente error maiores, nisi at, modi vel obcaecati rem in, a unde ut. Commodi aut earum possimus et obcaecati totam repudiandae laboriosam, ducimus alias optio distinctio rem tempora? Molestiae ab, quibusdam magnam esse illum consequatur repellat! Fugit, autem? Perferendis placeat officiis ullam. Voluptatem autem minima tempora culpa? Beatae voluptatibus minima illo ea optio facilis ducimus est cupiditate soluta quae neque veniam accusantium repellendus nulla praesentium possimus aliquam voluptate esse inventore sunt expedita, vero quaerat voluptatum. Quia explicabo provident saepe ullam rem libero facere, molestias est eligendi minus ducimus?</p>
+
+
+
+
+
+
+</body>
+</html> 

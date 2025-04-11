@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(230, 163, 76);
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            animation-name: b1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode:both; */
+            /* animation-direction:normal; */
+            /* animation-play-state: running; */
+            
+        }
+        @keyframes b1 {
+            0%{
+                top: 15px;
+                left: 15px;
+            }
+            25%{
+                top: 15px;
+                left: 800px;
+            }
+            50%{
+                top: 500px;
+                left: 800px;
+            }
+            /* 75%{
+                top: 400px;
+                left: 15px;
+            }
+            100%{
+                top: 15px;
+                left: 800px;
+            } */
+            
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(217, 43, 43);
+            
+            position: absolute;
+            top: 230px;
+            left: 15px;
+            animation: b2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes b2 {
+            0%{
+                top: 230px;
+                left: 15px;
+            }
+            25%{
+                top: 745px;
+                left: 15px;
+            }
+            50%{
+                top: 745px;
+                left: 800px;
+            }
+            
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: 15px;
+            position: absolute;
+            top: 460px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

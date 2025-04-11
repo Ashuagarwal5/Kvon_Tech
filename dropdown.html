@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown element</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown{
+            font-size:larger;
+            margin: 50px ;
+            display: inline;
+        }
+        span{
+            background-color: aqua;
+        }
+        .dropdown-content{
+            display: none;
+            margin-left: 120px;
+            height: 100px;
+            width: 250px;
+            text-align: center;
+            line-height:90px;
+            background-color: bisque;
+            border: 1px solid;
+            border-radius: 50px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>mouse over me</span>
+        <div class="dropdown-content">
+            <p> Hii! This is dropdown option</p>
+        </div>
+    </div>
+</body>
+</html>

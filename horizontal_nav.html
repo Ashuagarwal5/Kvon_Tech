@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal navbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            width: 100%;
+            height:80px;
+            background-color: #aad6ec;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        nav img{
+            float:left;
+            height:50px;
+            margin: 10px 20px;
+        }
+        ul{
+            list-style-type: none;
+            /* overflow: hidden; */
+        }
+        li{
+            text-align: center;
+            line-height: 80px;
+            float: left;
+            position: relative; 
+            width: 100px;  
+            padding: 0 20px;
+        }
+        .btn{
+            background-color: #aad6ec;
+            border: none;
+            width: 150px;
+            height: 80px;
+            margin-left: 0px;
+            font-size: 25px;
+            position: relative;
+        }
+        .btn:hover{
+            background-color: #81b1ce;
+            
+        }
+        .catagory-item{
+            display: none;
+            position: absolute;
+            top: 80px; 
+            left: 728px;
+            width: 140px;
+            background-color: #aad6ec;
+            padding: 0;
+            border: 1px solid;
+            list-style-type: none;
+        }
+        .catagory:hover .catagory-item{
+            display: block;
+            
+        }
+        .catagory-item li {
+            display: block;
+            /* line-height: 40px; */
+            /* padding: 10px; */
+            
+        }
+        a{
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+        }
+        
+        li:hover{
+            background-color: 	#81b1ce;
+        }
+
+        .sublist{
+            display: none;
+            position: absolute;
+            top: 80px; 
+            left: 0;
+            background-color: #aad6ec;
+            padding: 0;
+            border: 1px solid;
+            border-top:none;
+            /* z-index: 1000; */
+        }
+        .dropdown:hover .sublist{
+                display: block;
+                
+        }
+        .sublist li:hover {
+            background-color:#81b1ce ;
+        }   
+        .innerlist{
+            display: none;
+            position: absolute;
+            left: 140px;
+            top: 0;
+            background-color: #aad6ec; 
+            border: 1px solid;
+        }  
+        .dropdown2:hover .innerlist{
+            display: block;
+            
+        }
+        #content{
+            width: 100%;
+            height: 100vh;
+            color: black;
+            background-image: url('/images/mountain.jpg');
+            background-size: cover;
+            background-attachment:fixed; 
+            padding-top: 90px;
+                           
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <img src="/images/k2.svg" alt="logo" style="padding-top: 10px; "> 
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="">Facilities</a>
+                <ul class="sublist">
+                    <li><a href="">item1</a></li>
+                    <li class="dropdown2">
+                        <a href="">item2</a>
+                            <ul class="innerlist">
+                                <li><a href="#">list1</a></li>
+                                <li><a href="#">list2</a></li>
+                                <li><a href="#">list3</a></li>
+                                <li><a href="#">list4</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="">item3</a></li>
+                    <li><a href="">item4</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <div class="catagory">
+            <button class="btn">Catagory</button>
+            <div class="catagory-item">
+                <li><a href="">Web</a></li>
+                <li><a href="">App</a></li>
+                <li><a href="">UIUX</a></li>
+                <li><a href="">Node</a></li>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        <h1>Smart Solutions for a Connected World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur, quidem numquam maiores asperiores nisi dolorem explicabo deleniti aliquam ad aut fugit placeat, porro modi natus fuga pariatur reprehenderit nesciunt corporis nemo accusamus dolor! Officiis, quas. Inventore voluptas deleniti ratione hic quos eos omnis harum doloremque quo, id, sapiente provident!</p>
+    </div>
+</body>
+</html> 

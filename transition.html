@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ 
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            transition: background-color;
+        }
+        div:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+        div:active{
+            background-color: rgb(246, 158, 173);
+        }
+        div:focus{
+            background-color: rgb(211, 29, 29);
+            color: aliceblue;
+        }
+        div:focus-visible{
+            background-color: rgb(158, 246, 179);
+        }
+        div:focus-within{
+            background-color: rgb(235, 30, 204);
+        }
+        div:target{
+            background-color: rgb(224, 226, 114);
+        }
+    </style>
+</head>
+<body>
+    <div> try Transition property</div>
+</body>
+</html>

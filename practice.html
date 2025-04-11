@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            background-color: aquamarine;
+            height: 50px;
+            
+        }
+        li{
+            text-align: center;
+            position: relative; 
+            width: 100px;  
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        a{
+            text-decoration: none;
+            width: 100%; /* Ensures link covers the entire <li> */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        li:hover{
+            background-color: antiquewhite;
+        }
+        .container{
+            height: 250px;
+            width: 500px;
+            border: 2px solid ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner{
+            border: 2px solid red;
+            width: 300px;
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="">home</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact us</a></li>
+    </ul>
+    <div class="container">
+        <div class="inner">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, aspernatur, repudiandae maiores natus quibusdam ullam iure expedita sed dolor deleniti dicta quisquam doloribus velit quasi, saepe a quas. Minima modi tenetur eum harum quaerat quibusdam?
+        </div>
+    </div>
+</body>
+</html>

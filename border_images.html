@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            border: 25px solid;
+            border-image: url(/images/a1.jpeg);
+            border-image-slice: 40%;
+            background-repeat: repeat;
+            background-color: antiquewhite;
+            display: flex;
+            transition: margin 3s, background-color 2s,color 5s;
+        }
+        .container:hover{
+            margin: 50px;
+            background-color: aquamarine;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    
+</body>
+</html>

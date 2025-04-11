@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical navbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            width: 250px;
+            height:100vh;
+            background-color: #aad6ec;
+            background-attachment: fixed;
+            float: left;
+        }
+        li{
+            list-style-type: none;
+            background-color:#aad6ec;
+            text-align: center;
+            line-height: 50px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        li:hover{
+            width: auto;
+            background-color: 	#81b1ce;
+        }
+        #content{
+            width: 100vw;
+            height: 100vh;
+            color: black;
+            background-image: url('/images/mountain.jpg');
+            background-size: cover;
+            background-attachment:fixed;
+
+        }
+        a:active{
+            color: 	#0f1056;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="background-color: #6ab0d3;">
+                <img src="/images/k2.svg" alt="logo" style="padding-top: 10px; ">
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Facilities</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h1>Smart Solutions for a Connected World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur, quidem numquam maiores asperiores nisi dolorem explicabo deleniti aliquam ad aut fugit placeat, porro modi natus fuga pariatur reprehenderit nesciunt corporis nemo accusamus dolor! Officiis, quas. Inventore voluptas deleniti ratione hic quos eos omnis harum doloremque quo, id, sapiente provident!</p>
+    </div>
+</body>
+</html>
