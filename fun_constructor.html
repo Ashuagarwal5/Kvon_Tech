@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const func = new Function("return 10 + 20");
+        document.write("The value returned from the function is: " + func() +"<br>");
+
+        const add = new Function(
+            "const sum = function (a, b) {return  a+ b};  return sum",
+        )();    
+        document.write("pass function with parameter in function-construstor: "+add(5,10)+"<br>"); // 15
+        </script>
+</body>
+</html>

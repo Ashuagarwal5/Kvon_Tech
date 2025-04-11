@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>function as a parameter</h1>
+    <script>
+
+        document.write("<h2>multip</h2>");
+        function mult(a, b, c) {
+         let res = a * b * c;
+         return res;
+        }
+        let ans = mult(2, 3, 4);
+        document.write("The multiplication of 2, 3, and 4 is " + ans);
+
+        //Passing Arguments by Reference
+        document.write("<h2>Passing Arguments by Reference</h2>");
+
+        function update(obj) {
+            obj.domain = "www.facebook.com";
+        }
+        var obj = {
+            domain: "www.google.com",
+        }
+        document.write("Before calling the function! <br>");
+        document.write("domain = " + obj.domain + "<br>");
+        update(obj);
+        document.write( "After calling the function! <br>");
+        document.write( "domain = " + obj.domain + "<br>");
+
+    </script>
+</body>
+</html>

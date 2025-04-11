@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("arrow function <br>");
+        var divide = (x, y) => x / y;
+        document.write(divide(10, 5)+"<br>");
+
+        document.write("arrow function with parameter <br>");
+        var divide = x => 20 / x;
+        var res = divide(2);
+        document.write("The value returned from the arrow function is: " + res+ "<br>");
+
+        document.write("Arrow Function as an Expression<br>");
+        var Mul=false;
+        // var Mul=true;
+        const func = Mul ? () => {
+            let res = 5 * 5;
+            document.write("The multiplication value is: " + res + "<br>");
+        } : () => {
+            let res = 5 + 5;
+            document.write("The sum value is: " + res + "<br>");
+        };
+        func();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="sayHello()" value="Say Hello">
+    <input type="button" onclick="parameter('john',15)" value="try parameter">
+    <input type="button" onclick="secondFunction()" value="Call Function">
+
+    <script>
+        function sayHello(){
+            alert("Hii !");
+        }
+        function parameter(name,age){
+            document.write(name+age);
+        }
+        function secondFunction() {
+            var result;
+            result = concatenate('Zara ', 'Ali');
+            alert(result);
+        }
+        function concatenate(first, last) {
+         var full;
+         full = first + last;
+         return full;
+        }
+        </script>
+</body>
+</html>
