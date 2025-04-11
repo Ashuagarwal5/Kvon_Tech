@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <script type="text/javascript">
-  	var data=["urmi","mahima","umesh","hassan"]
-  	document.write(data[0]+"<br>")
-     al=data.length
-     document.write("array length is:"+al+"<br>")
-     for(i=0;i<al;i++)
-     {
-     	document.write("position no " + i + " and data "+data[i]+"<br>")
-     }
-  </script>
+    <script>
+        //array.constructor
+        var animals = ["lion", "cheetah", "tiger", "elephant"];
+        var result = animals.constructor;
+        document.write(result+"<br>");
+
+        // sort function
+        document.write("sort function-<br>");
+        var arr = [10, 25, 5, 20, 15];
+        var result = arr.sort();
+        document.write(result+"<br>");
+
+
+        //reverse array
+        document.write("reverse array-<br>");
+        var animals = ["Lion", "cow", "Tiger", "Elephant"];
+        document.write(animals.reverse()+"<br>");
+    </script>
 </body>
 </html>
