@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Types</h1>
+    <script lang="Java-script" >
+        
+        // String
+        document.write("<h2>string</h2>");
+        var str1 = "Hello World!";
+        let str2 = "let";
+        const str3 = "const";
+        // str3="let"; //const data cannot be changed;
+        document.write(str1);
+
+        // number
+        document.write("<h2>number</h2>");
+        num1=5;
+        var num2 = 10;
+        let num3 = 15;
+        const num4 = 20;
+        document.write(num1+"<br>");
+        document.write(num3+10+"<br>");
+        document.write(num3,+10+"<br>");
+        
+        
+        // Exponential notation of numbers:-
+        document.write("<h2>Exponential</h2>");
+        let n1 = 98e4;                     // 980000
+        let n2 = 98e-4;                    // 0.0098
+        document.write(n1 + "<br>");       // 980000
+        document.write(n2 + "<br>");       //0.0098
+        document.write(n1+n2 + "<br>");  //980000.0098
+        document.write(n1,+n2 + "<br>"); //9800000.0098
+
+        // Boolean
+        document.write("<h2>Boolean</h2>");
+        let bool1 = true;
+        let bool2 = false;
+        document.write( bool1 + "<br>");           //true
+        document.write( bool2 + "<br>");           //false
+        document.write( bool1+bool2 + "<br>");     //1
+        document.write( bool1,+bool2 + "<br>");    //true0
+    
+    
+        // undefined
+        document.write("<h2>Undefined</h2>");
+        let houseNo;            // Contains undefined value
+        let apartment = "Ajay";
+        apartment = undefined;  // Assigning the undefined value
+        document.write( houseNo + "<br>");     //undefined
+        document.write( apartment + "<br>");   //undefined
+        
+        //bigint
+        document.write("<h2>Bigint</h2>");
+        let largeNum = 1245646564515635412348923448234842842343546576876789n;
+        document.write( largeNum + "<br>"); 
+
+
+        // symbol
+        document.write("<h2>Symbol</h2>");
+        let sym1 = Symbol("123");
+        let sym2 = Symbol("123");
+        let res = sym1 === sym2;
+        document.write("sym1 and Sym2 are same? " + res + "<br>");  //false
+    
+        //object
+    //     let color = "Brown";
+    //     const obj = {
+    //         animal: "Hourse",
+    //         legs: 4,
+    //         hourseColor: color
+    //     }
+    //   document.write("The given object is: " + JSON.stringify(obj) + "<br>");
+
+
+        //date
+        document.write("<h2>Date</h2>");
+        let date = new Date();
+        document.write( date + "<br>");  //Wed Mar 26 2025 11:58:25 GMT+0530 (India Standard Time)
+
+
+        // check data type
+        document.write("<h2>Check Data Type</h2>");
+        let num = 30;
+        let str = "Hello";
+        let bool = true;
+        document.write( num+ " "+typeof num + "<br>");  //number
+        document.write( str+ " "+typeof str + "<br>");  //string
+        document.write( bool+ " "+typeof bool + "<br>"); //boolean
+
+
+
+
+    </script>
+</body>
+</html>
