@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects : </h1>
+   
+    <script>
+
+        document.write("<h2>Create objects using object literals</h2>");
+        var obj={
+            name : "ashu",
+            address: "jaipur",
+        }
+        document.write("access name using object:- <br> name : "+obj.name+"<br> address : "+obj.address);
+
+        // Create object using object() method
+        document.write("<h2>Create objects using object() method</h2>");
+        let book = new Object();
+        book.subject = "Perl";
+        book.author  = "Mom";
+        document.write("Book name is : " + book.subject + "<br>" + "Book author is : " + book.author);
+
+        // Create object using object constructor
+        document.write("<h2>Create objects using object constructor</h2>");
+        function Book(title, author) {
+         this.title = title; 
+         this.author  = author;
+         this.date= "5march";
+        }
+        const myBook = new Book("The House", "Ravi Shankar");
+        // document.write("Book title is : " + myBook.title + "<br>" +"Book author is : " + myBook.author + "<br>");
+         document.write("Book title is : " + myBook.title + "<br>" +"Book author is : " + myBook.author+ "<br>" +"Date is: " +myBook.date + "<br>");
+    </script>
+</body>
+</html>

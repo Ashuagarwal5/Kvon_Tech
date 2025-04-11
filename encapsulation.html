@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Encapsulation : </h1>
+    <script>
+        document.write("<h2>Encapsulation Using the Function : </h2>");
+        function shoppingCart() {
+            const cartItems = [];
+            function add(item) {
+                cartItems.push(item);
+                document.write(`${item.name} added to the cart. <br>`);
+            }
+            function remove(itemName) {
+                const index = cartItems.findIndex(item => item.name === itemName);
+                if (index !== -1) {
+                    const removedItem = cartItems.splice(index, 1)[0];
+                    document.write(`${removedItem.name} removed from the cart. <br>`);
+                } 
+                else {
+                document.write(`Item ${itemName} not found in the cart. <br>`);
+                }
+            }
+            return {
+                add,
+                remove,
+            };
+        }
+
+        // assign items
+        const item1 = { name: 'Car', price: 5000000 };
+        const item2 = { name: 'Bike', price: 300000 };
+        
+        // Create a new Shopping cart
+        const cart = shoppingCart();
+        
+        // Adding items to the cart
+        cart.add(item1);
+        cart.add(item2);
+
+        // Remove bike from the cart
+        cart.remove('Bike');
+
+
+
+        document.write("<h2>Encapsulation Using Private Variables</h2>");
+        class Car {
+            #brand = "TATA"; // Private variable
+            #name = "Nexon"; 
+            #milage = 16;    
+
+            getMilage() {
+                return this.#milage; // Accessing private variable
+            }
+
+            setMilage(milage) {
+                this.#milage = milage; // Modifying private variable
+            }
+        }
+
+        var obj = new Car();
+        document.write(obj.getMilage()+"<br>");
+        obj.setMilage(20);
+        document.write(obj.getMilage()+"<br>");
+    </script>
+</body>
+</html>

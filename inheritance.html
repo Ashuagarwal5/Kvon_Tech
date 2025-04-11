@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inheritance : </h1>
+
+    <script>
+        document.write("<h2> Single inheritance</h2>");
+        //parent class
+        class Bike {
+            constructor() {
+                this.gear = 5;
+            }
+
+            getGears() {
+                return this.gear;
+            }
+        }
+
+        // Child class
+        class suzuki extends Bike {
+            constructor() {
+                super();
+                this.brand = "Yamaha"
+            }
+
+            getBrand() {
+                return this.brand;
+            }
+        }
+
+        var suzukiBike = new suzuki();
+        document.write(suzukiBike.getBrand()+"<br>");
+        document.write(suzukiBike.getGears()+"<br>");
+
+        //multilevel inheritance
+         document.write("<h2> multilevel inheritance</h2>");
+         //parent class
+        class Bke {
+            constructor(gears) {
+                this.gears = gears;
+            }
+        }
+        // Child class
+        class Honda extends Bke {
+            constructor(brand, gears) {
+                super(gears);
+                this.brand = brand;
+            }
+        }
+        class Shine extends Honda {
+            constructor(model, brand, gears) {
+                super(brand, gears);
+                this.model = model;
+            }
+        }
+        var newBike = new Shine("Shine", "Honda", 5);
+        document.write(`The ${newBike.model} model of the ${newBike.brand} brand has total ${newBike.gears} gears.<br>`);
+
+
+        document.write("<h2> Hierarchical  inheritance</h2>");
+        // Parent class
+        class Bik {
+            constructor(gears) {
+                this.gears = gears;
+            }
+        }
+        // Child class
+        class H extends Bik {
+            constructor(model, gears) {
+                super(gears);
+                this.model = model;
+            }
+        }
+        // Child class
+        class S extends Bik {
+            constructor(model, color, gears) {
+                super(gears);
+                this.model = model;
+                this.color = color;
+            }
+        }
+        var h_Bike = new H("Shine", 5);
+        var s_Bike = new S("Zx6", "Blue", 6);
+        document.write(JSON.stringify(h_Bike)+"<br>");
+        document.write(JSON.stringify(s_Bike)+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Polymorphism </h1>
+    <script>
+        class Shape {
+            area(a, b) {
+                return "The area of each Geometry is different! <br>";
+            }
+        }
+
+        class Circle extends Shape {
+            area(r) { // Overriding the method of the Shape class
+                return "The area of Circle is " + (3.14 * r * r) + "<br>";
+            }
+        }
+
+        class Rectangle extends Shape {
+            area(l, b) { // Overriding the method of the Shape class
+                return "The area of Rectangle is " + (l * b) + "<br>";
+            }
+        }
+
+        var circle = new Circle();
+        // Calling area() method of Circle class
+        document.write(circle.area(5)); 
+    
+        const rectangle = new Rectangle();
+        // Calling area() method of Rectangle class
+        document.write(rectangle.area(5, 10)); 
+    </script>
+</body>
+</html>
