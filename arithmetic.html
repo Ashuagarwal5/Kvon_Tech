@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arithmatic Operators</h1>
+    <script>
+    // arithmatic operator
+        document.write( "X= ",+ 20 + " & "+"Y= ",+ 10 +"</br>");
+        //addition
+
+        document.write("<h2>addition (+) </h2>");
+        var x = 20; y = 10;
+        var z = x + y ;
+        document.write( "sum of two int: " ,+ z +"</br>");
+        var z = '10' + 3 
+        document.write("sum of string+int : " ,+ z +"</br>");
+        var z = '10' + '3';
+        document.write("sum of string+string : " ,+ z +"</br>");
+
+        //Subtraction 
+        document.write("<h2>Subtraction (-) </h2>");
+        var x = 20; y = 10;
+        var z = x - y ;
+        document.write( "sub(-) of two int: " ,+ z +"</br>");
+        x = "20"; y = "10"
+        z = x - y ;
+        document.write( "sub(-) of two string: " ,+ z +"</br>");
+        x = "20ee"; 
+        z = x - y ;
+        document.write( "sub(-) of two exponential : " ,+ z +"</br>");
+
+        //Multiplication  
+        document.write("<h2>Multiplication (*)  </h2>");
+        var x = 20; y = 10;
+        var z = x * y ;
+        document.write( "multi(*) of two int: " ,+ z +"</br>");
+        x = "20"; y = "10"
+        z = x * y ;
+        document.write("multi(*) of two string: " ,+ z +"</br>");
+        x = "20ee"; 
+        z = x * y ;
+        document.write( "multi(*) of exponential & int: " ,+ z +"</br>");
+
+        //Division   
+        document.write("<h2>Division (/)  </h2>");
+        var x = 20; y = 10;
+        var z = x / y ;
+        document.write("Division(/) of Two int: " ,+ z +"</br>");
+        x = "20"; y = "10"
+        z = x / y ;
+        document.write("Division(/) of Two String: " ,+ z +"</br>");
+        z = x / 0 ;
+        document.write("Division(/) of 20/0 : " ,+ z +"</br>");
+        z = 0 / 0 ;
+        document.write("Division(/) of 0/0 : " ,+ z +"</br>");
+
+        //Modulus (%) 
+        document.write("<h2>Modulus (%) </h2>");
+        var x = 20 % 9;
+        var y = -20 % 9;
+        var z = 20.43 % 9;
+        var a = 20 % -9;
+        var b = 20 % 10;
+        document.write("modulus(%) of 20%9 : " ,+ x +"</br>");
+        document.write("modulus(%) of -20%9 : " ,+ y +"</br>");
+        document.write("modulus(%) of 20.43%9 : " ,+ z +"</br>");
+        document.write("modulus(%) of 20 % -9 : " ,+ a +"</br>");
+        document.write("modulus(%) of 20%10 : " ,+ b +"</br>");
+
+        //Increment (++) 
+        document.write("<h2>Increment (++) </h2>");
+        document.write("<h4>x= 10 & y=--x <br> a=10 & b=a-- </h4>");
+        var x = 10;
+        var y = --x;  
+        var a = 10;
+        var b = a--;  
+        document.write("x = " + x);
+        document.write(" y = " + y + "<br>");
+        document.write("a = " + a);
+        document.write(" b = " + b + "<br>");
+
+        //Decrement (--) 
+        var x = 10;
+        var y = --x;  
+        var a = 10;
+        var b = a--; 
+        document.write("x = " + x);
+        document.write(" y = " + y + "<br>");
+        document.write("a = " + a);
+        document.write(" b = " + b + "<br>");
+
+
+    </script>
+</body>
+</html>
