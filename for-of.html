@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for-of loop</h1>
+    <script>
+        //for-of loop using array
+        document.write("<h2>for-of loop using array</h2>");
+        
+        const arr = ["JavaScript", "Python", "C", "C++", "HTML", "CSS"];
+        for (let ele of arr) {
+            document.write(ele + "<br>");
+        }
+
+        //for-of loop using string
+        document.write("<h2>for-of loop using string</h2>");
+        let str = "JavaScript";
+        for (let char of str) {
+            document.write(char + "<br> ");
+        }
+
+        //for-of loop using set (set removes duplicate values it containes only unique data)
+        document.write("<h2>for-of loop using Set</h2>");
+        const nums = new Set([10, 20, 30, 30, 30, 40, 50, 60]);
+        for (let num of nums) {
+            document.write(num + ", ");
+        }
+
+    </script>
+</body>
+</html>

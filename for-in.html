@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For-in loop</h1>
+    <script>
+
+        //for in object
+        document.write("<h2>for-in loop using object</h2>")
+        let car = {
+            brand: "OD",
+            model: "Q7",
+            color: "Black",
+        }
+        for (key in car) {
+            document.write(key + " -> " + car[key] + "<br>");
+        }
+
+        //for-in loop using array
+        document.write("<h2>for-in loop using array</h2>")
+        
+        let array = ["Hi", "Hello", 900, 23, true, "JavaScript"];
+        for (key in array) {
+            document.write(key + " -> " + array[key] + "<br>");
+        }
+
+
+        //for-in loop using string
+        document.write("<h2>for-in loop using String</h2>")
+        
+        let str = "Hello";
+        for (key in str) {
+            document.write(key + " -> " + str[key] + "<br>");
+        }
+
+    </script>
+</body>
+</html>

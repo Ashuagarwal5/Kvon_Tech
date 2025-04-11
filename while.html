@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>While loop</h1>
+    <script>
+
+        var count = 0;
+        while (count < 10) {
+            document.write("Current Count : " + count + "<br>");
+            count++;
+        }
+        
+        //check number is Palindrome or not
+        document.write("<h2> number is Palindrome or not</h2>");
+
+        var num=121;
+        var temp=num;
+        var rem,rev=0;
+        while(temp!=0){
+            rem=temp%10;
+            rev=rev*10+rem;
+            temp=temp/10;
+            temp = Math.floor(temp);
+        }
+        if(num==rev){
+            document.write(num+ " is a Palindrome number <br>");
+        }
+        else{
+            document.write(num+" not a Palindrome number <br>");
+        }
+
+        
+        //check number is Armstrong number or not
+        document.write("<h2>Check number is Armstrong number or not</h2>");
+
+        var num=1634;
+        var temp=num;
+        var pal=num;
+        var digit=0;
+        var rem;
+        var sum=0;
+        while(temp){
+            rem=temp%10;
+            temp=Math.floor(temp/10);
+            digit++;
+        }
+        while(pal){
+            rem=pal%10;
+            sum+=rem**digit;
+            pal=Math.floor(pal/10);
+        }
+        if(sum==num){
+            document.write("Armstrong number");
+        }
+        else{
+            document.write("not a armstrong number");
+        }
+        
+    </script>
+</body>
+</html>
