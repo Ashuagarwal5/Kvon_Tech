@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callback Function</h1>
+    <script>
+        function multiply(c){
+            let m= c*5;
+            document.write(m);
+        }
+        function sum(a,b,callback){
+            let c=a+b;
+            callback(c);
+        }
+        sum(5,5,multiply);
+
+        // callback function using arrow function
+
+        document.write("<h2> Callback using arrow function </h2>");
+        // function multi(a,b){
+        //     let c=a*b;
+        //     document.write(c);
+        // }
+        // function sum(){
+        //     (5,5,multi)=>{callback(5+5)}
+        // }
+        function getdata(data,getnextdata){
+            setTimeout(()=>{
+                document.write(" name "+data);
+                if(getnextdata){
+                    getnextdata();
+
+                }
+            },2000);
+        }
+        getdata("ashu",()=>{
+            getdata("shiv",()=>{
+                getdata("vineet");
+            });
+        });
+    </script>
+</body>
+</html>
